@@ -1,0 +1,93 @@
+<html>
+
+<head>
+    <title>Ina.exe</title>
+</head>
+
+<body>
+    <main class="container">
+        <header>
+            <h1>Hello, Everynyan!</h1>
+            <p class="subtitle">Ini website HTML saya.</p>
+        </header>
+
+        <section class="card">
+            <h2>About Me</h2>
+            <p>Saya sedang belajar membuat website menggunakan HTML.</p>
+        </section>
+
+        <section class="card">
+            <h2>What I Like</h2>
+            <ul>
+                <li>Catto</li>
+                <li>Mendengarkan musik</li>
+                <li>Nonton film</li>
+                <li>Main game</li>
+            </ul>
+        </section>
+
+        <section class="card cat-section">
+            <h2>Catto!</h2>
+            <p>Behold... the creature.</p>
+            <img class="cat-image" src="cat.jpeg" alt="cat">
+            <a href="https://en.wikipedia.org/wiki/Cat">
+	    <button>Click Me!</button>
+	    </a>
+        </section>
+
+        <section class="certified">
+            <h2>Certified Catto Lover</h2>
+            <p>❤️🐱</p>
+            <p><strong>I LOVE CAT</strong></p>
+            <p>This website has been reviewed by 0 cats. Approval pending.</p>
+        </section>
+
+        <footer class="footer">Ina.exe</footer>
+    </main>
+</body>
+
+<style>
+	:root {--bg: #10101b;
+               --card: #1b1b2b;
+               --neon: #00ffcc;
+               --pink: #ff5fd2;
+               --text: #f4f4ff;
+               --muted: #b8b8ca}
+        *{box-sizing: border-box}
+
+        body {margin: 0;padding: 30px 16px;background: radial-gradient(circle at top left, #25204a 0, transparent 35%), radial-gradient(circle at bottom right, #123b3b 0, transparent 30%), var(--bg);color: var(--text);font-family: Arial, sans-serif;line-height: 1.6}
+        .container {width: 100%; max-width: 1400px; margin: auto;}
+
+        header {padding: 35px 24px;text-align: center;background: rgba(27, 27, 43, 0.9);border: 1px solid var(--neon);border-radius: 18px;box-shadow: 0 0 18px rgba(0, 255, 204, 0.15)}
+
+        h1 {margin: 0 0 8px;color: var(--neon);font-size: clamp(2rem, 6vw, 3rem);text-shadow: 0 0 12px rgba(0, 255, 204, 0.45)}
+        .subtitle {margin: 0;color: var(--muted)}
+        .card {margin-top: 20px;padding: 22px;background: rgba(27, 27, 43, 0.88);border: 1px solid #34344b;border-radius: 16px}
+
+        h2 {margin-top: 0;color: var(--neon);font-size: 1.35rem}
+
+        p {margin-bottom: 0}
+
+        ul {margin-bottom: 0;padding-left: 22px}
+
+        li {padding: 4px 0}
+        li::marker {color: var(--pink)}
+
+        button {display: inline-block;margin-top: 16px;padding: 10px 20px;background: var(--neon);color: #10101b;border: 0;border-radius: 10px;font-weight: bold;text-decoration: none;transition: transform 0.2s, box-shadow 0.2s}
+        button:hover {transform: translateY(-3px);box-shadow: 0 0 16px rgba(0, 255, 204, 0.5)}
+
+        .cat-section {text-align: center}
+        .cat-section h2 {color: var(--pink)}
+
+        .cat-image {display: block;width: 100%;max-width: 300px;max-height: 300px;object-fit: cover;margin: 20px auto 0;order: 2px solid var(--neon);border-radius: 16px;box-shadow: 0 0 18px rgba(0, 255, 204, 0.18)}
+
+        .certified {margin-top: 20px;padding: 24px;color: var(--bg);background: linear-gradient(135deg, var(--neon), #8bffe9);border-radius: 16px;text-align: center}
+        .certified h2 {margin-bottom: 4px;color: var(--bg)}
+        .certified p {margin: 6px 0 0;}
+
+        .footer {padding: 24px 0 4px;color: var(--muted);text-align: center;font-size: 0.85rem}
+
+        @media (max-width: 480px) {body {padding: 18px 12px} header, .card, .certified {padding: 20px}}
+    </style>
+
+</html>
